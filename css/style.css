@@ -1,0 +1,189 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow: visible;
+}
+
+body {
+  background-color: rgb(41, 39, 39);
+}
+
+.canvas {
+  border: 1px rgba(0, 0, 0) solid;
+  box-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 5rem;
+  bottom: 5rem;
+  left: 10rem;
+  right: 10rem;
+  margin: auto;
+  background-color: rgba(255, 255, 255);
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.side-car {
+  background-color: rgb(61, 59, 59);
+  height: 100vh;
+}
+
+.container {
+  padding: 0rem;
+}
+
+.btn-outline-info {
+  border-color: transparent;
+}
+
+.btn-outline-info:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: transparent;
+}
+
+.btn-outline-info:focus {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-info:not(:disabled):not(.disabled):active {
+  border-color: transparent;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#canvas-draft {
+  background-color: transparent;
+}
+body {
+  /* overflow: hidden; */
+  position: relative;
+  display: flex;
+}
+
+.btn {
+  padding: 0rem 0.5rem;
+  line-height: 2.3;
+  border-radius: 0.2rem;
+}
+
+#my_fill_color_picker {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  bottom: 1.2rem;
+  left: 0.3rem;
+  background: #fff;
+  border: transparent;
+  border-radius: 0px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#my_picker {
+  position: absolute;
+  bottom: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 0.8rem;
+  background: #fff;
+  border: transparent;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.buttons:last-child {
+  padding-bottom: 3rem;
+}
+
+#my_fill_color_picker > #tooltip2 {
+  visibility: hidden;
+  /* display: none; */
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 2.3rem;
+}
+
+#my_picker > #tooltip1 {
+  visibility: hidden;
+  /* display: none; */
+  width: 120px;
+  background-color: rgba(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 1.8rem;
+}
+
+.top-menu {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  left: 2.5rem;
+  top: 0rem;
+  background-color: rgb(61, 59, 59);
+}
+
+.collapse-button {
+  display: none;
+}
+
+/* stroke width slider */
+#stroke-width {
+  /* position: absolute;
+  top: 10rem;
+  left: 59rem; */
+  -webkit-appearance: none;
+  background: none;
+  display: none;
+}
+
+#stroke-width::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 8px;
+  /* colour of the slider */
+  background: black;
+  border-radius: 5px;
+}
+
+#stroke-width::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  /* colour of the circle */
+  background: #fff;
+  margin-top: -5px;
+}
+#stroke-width:focus {
+  outline: none;
+}
